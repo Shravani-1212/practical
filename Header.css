@@ -1,0 +1,43 @@
+/* Header Styling */
+.header {
+  background: #f0f0f0; /* Background color */
+  padding: 10px 20px; /* Padding for spacing */
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Align logo and nav links horizontally */
+  align-items: center; /* Vertically center items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for separation */
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex; /* Ensure logo is inline */
+  align-items: center; /* Vertically center the logo */
+}
+
+.logo {
+  height: 60px; /* Set a fixed height for the logo */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex; /* Ensure the nav links are in a row */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links div {
+  display: flex; /* Ensure the links are in a row */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Link color */
+  font-size: 16px; /* Font size */
+  padding: 8px 12px; /* Add padding for better clickability */
+  border-radius: 4px; /* Rounded corners for a button-like appearance */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+  background-color: #ddd; /* Light gray background on hover */
+}

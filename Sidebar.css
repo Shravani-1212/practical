@@ -1,0 +1,34 @@
+.sidebar {
+  width: 200px;
+  background: #fff;
+  padding: 20px;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-links li a:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.sidebar-links li.active a {
+  background-color: orange; /* Highlight active link */
+  color: white;
+}

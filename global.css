@@ -1,0 +1,140 @@
+/* Reset default browser styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-screen app layout */
+.app {
+  display: flex;
+  flex-direction: column; /* Stack header, content vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Header styling */
+.header {
+  background: #f0f0f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Align logo and nav links horizontally */
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for separation */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between nav links */
+}
+
+.nav-links li {
+  margin-bottom: 0; /* Remove bottom margin for better alignment */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 200px; /* Fixed width for sidebar */
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-links li a:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.sidebar-links li.active a {
+  background-color: orange; /* Highlight active link */
+  color: white;
+}
+
+/* Main content area */
+.content {
+  display: flex; /* Sidebar and main content side by side */
+  flex: 1; /* Take up remaining space */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.main-content {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  background: #f9f9f9; /* Optional: Add background color */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table td[colspan] {
+  text-align: center;
+  color: #999;
+}
+
+.add-button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
